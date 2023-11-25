@@ -21,8 +21,6 @@ func (s *server) Notify(ctx context.Context, req *notification.NotificationReque
 		Status:  "ok",
 	}, nil
 }
-
-func (s *server) mustEmbedUnimplementedNotificationServiceServer() {}
 func main() {
 	listener, err := net.Listen("tcp", "localhost:9001")
 	if err != nil {
